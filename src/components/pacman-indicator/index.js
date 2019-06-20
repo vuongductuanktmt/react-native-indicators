@@ -33,8 +33,8 @@ export default class PacmanIndicator extends PureComponent {
       position: 'absolute',
       top: size / 2 - size / 16,
       left: size / 2 + size / 16 + (index - 2) * size / 4,
-      width: size / 8,
-      height: size / 8,
+      width: size / 12,
+      height: size / 12,
       borderRadius: size / 16,
       backgroundColor,
       transform: [{
@@ -122,7 +122,7 @@ export default class PacmanIndicator extends PureComponent {
     return (
       <View style={[styles.container, style]}>
         <Indicator
-          style={{ width: size * 1.25, height: size }}
+          style={{ width: size, height: size }}
           renderComponent={this.renderComponent}
           {...props}
           count={5}
