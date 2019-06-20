@@ -31,11 +31,11 @@ export default class PacmanIndicator extends PureComponent {
 
     let style = {
       position: 'absolute',
-      top: size / 2 - size / 16,
-      left: size / 2 + size / 16 + (index - 2) * size / 4,
+      top: size / 2 - size / 24,
+      left: size / 2 + size / 24 + (index - 2) * size / 4,
       width: size / 12,
       height: size / 12,
-      borderRadius: size / 16,
+      borderRadius: size / 24,
       backgroundColor,
       transform: [{
         translateX: progress.interpolate({
